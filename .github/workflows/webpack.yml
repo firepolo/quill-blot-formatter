@@ -28,6 +28,7 @@ jobs:
 
     - name: Create Archive
       run: |
+        rm -r node_modules
         zip -r release.zip ./*
       shell: bash
 
