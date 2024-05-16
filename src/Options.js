@@ -1,31 +1,24 @@
 // @flow
 
-import BlotSpec from './specs/BlotSpec';
-import ImageSpec from './specs/ImageSpec';
-import IframeVideoSpec from './specs/IframeVideoSpec';
+import BlotSpec from './specs/BlotSpec'
+import ImageSpec from './specs/ImageSpec'
+import IframeVideoSpec from './specs/IframeVideoSpec'
 
 export type OverlayOptions = {
   // classname applied to the overlay element
   className: string,
   // style applied to overlay element, or null to prevent styles
   style: ?{},
-};
+}
 
 export type ResizeOptions = {
   // class name applied to the resize handles
   handleClassName: string,
   // style applied to resize handles, or null to prevent styles
   handleStyle: ?{},
-};
+}
 
 export type AlignOptions = {
-  // the name of the attribute for an element that has its alignment changed
-  attribute: string,
-  // the aligner does the actual alignment switch
-  aligner: {
-    // whether or not the aligner should handle the actual alignment properties
-    applyStyle: boolean,
-  },
   // icons used for alignment
   icons: {
     left: string,
@@ -50,7 +43,7 @@ export type AlignOptions = {
     // style applied to the svgs in the buttons
     svgStyle: ?{},
   },
-};
+}
 
 export type Options = {
   // the BlotSpecs supported
@@ -58,7 +51,7 @@ export type Options = {
   overlay: OverlayOptions,
   align: AlignOptions,
   resize: ResizeOptions,
-};
+}
 
 const DefaultOptions: Options = {
   specs: [
@@ -74,10 +67,6 @@ const DefaultOptions: Options = {
     },
   },
   align: {
-    attribute: 'data-align',
-    aligner: {
-      applyStyle: true,
-    },
     icons: {
       left: `
         <svg viewbox="0 0 18 18">
@@ -150,6 +139,6 @@ const DefaultOptions: Options = {
       opacity: '0.80',
     },
   },
-};
+}
 
-export default DefaultOptions;
+export default DefaultOptions

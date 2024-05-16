@@ -2,6 +2,6 @@
 
 export type Alignment = {
   name: string,
-  icon: string;
-  apply: (el: HTMLElement) => void;
+  icon: string,
+  apply: (el: HTMLElement) => void
 }
