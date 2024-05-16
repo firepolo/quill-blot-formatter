@@ -62,7 +62,7 @@ var DefaultAligner = function () {
   }, {
     key: 'setAlignment',
     value: function setAlignment(el, value) {
-      this.clear();
+      this.clear(el);
       el.classList.add('qbf-align-' + value);
     }
   }]);

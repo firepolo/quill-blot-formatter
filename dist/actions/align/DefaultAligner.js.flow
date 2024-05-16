@@ -44,7 +44,7 @@ export default class DefaultAligner implements Aligner {
   }
 
   setAlignment(el: HTMLElement, value: string) {
-    this.clear()
+    this.clear(el)
     el.classList.add(`qbf-align-${value}`)
   }
 }
