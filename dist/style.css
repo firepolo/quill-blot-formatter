@@ -1,0 +1,14 @@
+.qbf-align-left {
+	display: inline;
+	float: left;
+}
+
+.qbf-align-center {
+	display: block;
+	margin: 0 auto;
+}
+
+.qbf-align-right {
+	display: inline;
+	float: right;
+}

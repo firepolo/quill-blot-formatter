@@ -29,10 +29,6 @@ var DefaultOptions = {
     }
   },
   align: {
-    attribute: 'data-align',
-    aligner: {
-      applyStyle: true
-    },
     icons: {
       left: '\n        <svg viewbox="0 0 18 18">\n          <line class="ql-stroke" x1="3" x2="15" y1="9" y2="9"></line>\n          <line class="ql-stroke" x1="3" x2="13" y1="14" y2="14"></line>\n          <line class="ql-stroke" x1="3" x2="9" y1="4" y2="4"></line>\n        </svg>\n      ',
       center: '\n        <svg viewbox="0 0 18 18">\n           <line class="ql-stroke" x1="15" x2="3" y1="9" y2="9"></line>\n          <line class="ql-stroke" x1="14" x2="4" y1="14" y2="14"></line>\n          <line class="ql-stroke" x1="12" x2="6" y1="4" y2="4"></line>\n        </svg>\n      ',
